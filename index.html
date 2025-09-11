@@ -37,11 +37,12 @@ p {
 .text-content{
   text-align: center;
   position: relative;
+  margin: 40px;
 }
+
 .mySlides {
   display: none;
   margin-left: 800px;
-
 }
 
 .prev, .next {
@@ -110,6 +111,10 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+window.onload = function() {
+  showSlides(1);
+}
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -128,7 +133,7 @@ function showSlides(n) {
   </script>
 <h1>Welcome to Japan</h1>
   <div class="slideShow-wrapper">
-  <div class="mySlides fade">
+    <div class="mySlides fade">
     <div class="numbertext">1 / 4</div>
     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/525/original/tianshu-liu-SBK40fdKbAg-unsplash.jpg?1757520573" style="width:30%">
   </div>
@@ -159,7 +164,23 @@ function showSlides(n) {
 </div>
 </div>
 <div class="text-content">
-  <p>A beautiful island nation</p>
+  <p>A beautiful island nation bridging the divide between tradition and innovation. You can wander ancient shrines in the morning and modern high-rises by the evening, thanks to trains that travel at 199 mph. </p>
+<p>
+I personally want to visit during the sakura season, when the cherry trees bloom all across Japan and the city is covered in pink petals. I've seen the pictures, and it looks magical.
+</p>
+<p>
+Another magical place to visit in Japan is Nara, where deer bow to you for treats. It's a city of shrines that the deer freely wander through, and they will happily stop to bow in hopes of “mugging” you for something tasty.
+</p>    
+<p>
+      Obviously, the most famous place to visit is Tokyo. The capital of Japan and it's largest city with over 37 million residents. It's actually the most populous metropolitan area in the world! Despite that the city is known to be a very clean city
+     and is a center of fashion and shopping thanks to the cultural values of the Japanese people.  
+    </p>
+</div>
+<div class="learnMore">Learn More</div>
+<div>
+  <button>Sakura Season</button>
+  <button>Nara</button>
+  <button><a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo</a></button>
 </div>
 </body>
 </html>
